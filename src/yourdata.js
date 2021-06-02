@@ -17,21 +17,21 @@ export default {
   //Change The Website Template
 
   //   Header Details ---------------------
-  name: "chetan",
+  name: "Wood",
   headerTagline: [
     //Line 1 For Header
-    "Building digital",
+    "Construo",
     //Line 2 For Header
-    "products, brands,",
+    "aplicações web",
     //Line 3 For Header
-    "and experience",
+    "e design",
   ],
   //   Header Paragraph
   headerParagraph:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.",
 
   //Contact Email
-  contactEmail: "hello@chetanverma.com",
+  contactEmail: "woodmutran@gmail.com",
 
   // End Header Details -----------------------
 
@@ -171,10 +171,10 @@ export default {
 
   //   Contact Section --------------
 
-  contactSubHeading: "Let's create your next experience together",
+  contactSubHeading: "Vamos criar a sua próxima experiência juntos",
   social: [
     // Add Or Remove The Link Accordingly
-    { img: githubIcon, url: "https://github.com/chetanverma16" },
+    { img: githubIcon, url: "https://github.com/woodmutran" },
     {
       img: codepenIcon,
       url: "https://www.codepen.com/",
