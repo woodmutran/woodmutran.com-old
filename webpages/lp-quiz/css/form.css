@@ -1,0 +1,154 @@
+/*-----------FORMULÃƒÂRIO SIMPLES-----------*/
+.boxForm{
+  width: 100%;
+  max-width: 600px;
+}
+
+.simpleForm{
+  width: 100%;
+  margin: 0px auto;
+}
+
+.simpleForm input:focus{
+  outline-offset: 0;
+  outline: -webkit-focus-ring-color auto 0px;
+  /* background: none; */
+}
+
+.simpleForm input:-webkit-autofill{
+  /* color: #fff !important; */
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  background-image: url(https://lp1.empiricus.com.br/assets/svgs-default/email-black.svg);
+}
+
+.simpleForm .iconEmail::after{
+  content: "";
+  width: 100%;
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.0);
+  border-bottom: solid 4px rgba(0, 0, 0, 0.3);
+  display: block;
+}
+
+.simpleForm .input{
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: var(--fwNormal);
+  padding: 12px 12px 12px 30px;
+  color: #000;
+  background: rgba(0, 0, 0, 0.0);
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  background-position: 0px;
+  border: none;
+  border-bottom: 1px solid #000;
+  display: block;
+  position: relative;
+}
+
+.simpleForm .iconEmail{
+  background-image: url(https://lp1.empiricus.com.br/assets/svgs-default/email-black.svg);
+  padding: 12px 12px 12px 30px;
+}
+
+.simpleForm .iTel{
+  background-image: url(https://lp1.empiricus.com.br/assets/svgs-default/phone-black.svg);
+  padding: 12px 12px 12px 30px;
+}
+
+.simpleForm .input::placeholder{
+  font-size: 1.1rem;
+  font-family: inherit;
+}
+
+.simpleForm fieldset:first-child{width: 100%;}
+
+.simpleForm .boxNameCel{
+  width: 100%;
+  height: auto;
+  margin: 7px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.simpleForm .boxNameCel fieldset{width: calc(50% - 5px);}
+
+.simpleForm fieldset{
+  border: 0;
+  padding: 0;
+  margin: 0 0 15px;
+}
+
+.simpleForm fieldset .input{padding: 12px 12px 12px 0;}
+
+.simpleForm .btn-submit, .btOpenForm{
+  width: 100%;
+  max-width: 440px;
+  font-size: 1.45rem;
+  font-weight: var(--fwBolder);
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.15rem;
+  position: relative;
+  padding: 1.5rem var(--defaultSpace);
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.95);
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.15) 20%, rgba(0,0,0, 0) 80%); */
+  background-color: var(--btnsColor);
+  cursor: pointer;
+  border-radius: 3px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: block;
+}
+
+.simpleForm  .btn-submit{margin: 0 auto 10px;}
+
+.simpleForm .btn-submit:after, .btOpenForm:after{
+  content: "";
+  width: 100%;
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.0);
+  border-bottom: solid 4px rgba(0, 0, 0, 0.25);
+  display: block;
+}
+
+.simpleForm .btn-submit:hover, .btOpenForm:hover{
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 10%, rgba(0,0,0, 0) 90%);
+  background-color: var(--btnsColor);
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.simpleForm .infoSubmit{
+  width: 100%;
+  max-width: 600px;
+  color: #aaa;
+  text-align: center;
+  font-size: 1rem;
+  line-height: normal;
+}
+/*-----------/FORMULÃƒÂRIO SIMPLES-----------*/
+
+@media only screen and (min-width: 768px){
+  .simpleForm .btn-submit, .btOpenForm{font-size: 1.75rem;}
+}
+
+@media only screen and (min-width: 1000px){
+  .btOpenForm{margin: 30px auto 0;}
+}

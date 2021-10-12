@@ -1,0 +1,358 @@
+ul.modulos {
+	list-style-type: circle;
+}
+
+.modulos li {
+	font-size: 1.1rem;
+	text-align: left;
+}
+
+.row-1, .row-2 {
+	display: block;
+	flex-wrap: wrap;
+}
+
+.row-1 {
+	margin-bottom: 2rem;
+}
+
+.promo {
+    background-image: url(../img/img-promo.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+}
+
+.promo small {
+	font-size: .8rem;
+	color: #fff;
+	background-color: #000;
+}
+
+.promo .card .cardContent {
+	margin-top: 1.3rem;
+}
+
+.promo .card .cardExtra {
+	margin-top: 1rem;
+}
+
+.promo h3 {
+	color: var(--bgDefault);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin: 0 auto;
+}
+
+.promo p {
+	font-size: 1.2rem;
+	color: #fff;
+	margin: 25px;
+	line-height: .3rem;
+}
+
+.card {
+	color: #4f5963;
+	width: 100%;
+	box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.14);
+	border-radius: .25rem;
+	margin-bottom: 1.5rem;
+	background-color: #fff!important;
+	padding: 1.5rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	height: 27rem;
+}
+
+.card:hover {
+	box-shadow: 0 2px 14px 0 rgba(0,0,0,.2);
+}
+
+.cardHeader {
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	background-color: #fff;
+	padding: 0 0 1.3rem;
+	display: flex;
+}
+
+.cardHeader:first-child {
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card .cardHeader .cardHeader-image {
+	width: 5.5rem;
+	height: 5.5rem;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	border-radius: .25rem;
+}
+
+.card .cardHeader .cardHeader-title {
+	margin-left: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: baseline;
+	text-align: left;
+}
+
+.btn {
+	/* width: 100%; */
+	width: 130px;
+	height: 40px;
+	display: inline-block;
+	font-family: Default Medium,Arial;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #ff4b4b;
+	border: 1px solid transparent;
+	padding: .45rem .4rem;
+	font-size: 1rem;
+	line-height: 1.1;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #ff0019;
+}
+
+.card .cardContent {
+	height: 10rem;
+	font-size: .9rem;
+	text-align: left;
+	line-height: 1.3rem;
+}
+
+.cardHeader-title .subtitle, .cardTitle  {
+	margin-bottom: .8rem;
+}
+
+.card .cardHeader .cardHeader-title .subtitle {
+	font-size: 1rem;
+	margin-top: 5px;
+}
+
+.card .cardExtra {
+	margin-top: 9rem;
+}
+
+.card .cardHeader .cardHeader-title .cardTitle {
+	font-size: 1rem;
+}
+
+.card .cardExtra .cardExtra-renda {
+	margin-bottom: 1.5rem;
+}
+
+.card .cardExtra .cardExtra-renda .extraDescription, .card .cardExtra .cardExtra-rentabilidade .extraDescription {
+	font-size: .7rem;
+	font-family: Default Medium,Arial;
+	margin-bottom: .2rem;
+	display: flex;
+	align-items: center;
+}
+
+.card .cardExtra .cardExtra-renda .extraBody, .card .cardExtra .cardExtra-rentabilidade .extraBody {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card .cardExtra .cardExtra-renda, .card .cardExtra .cardExtra-rentabilidade {
+	display: flex;
+	flex-direction: column;
+}
+
+.card .cardExtra .cardExtra-renda .extraTitle, .card .cardExtra .cardExtra-rentabilidade .extraTitle {
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: #161927;
+	display: flex;
+	align-items: center;
+}
+
+.iconUp {
+	background-image: url("../svg/icon-up.svg");
+	height: 15px;
+	background-repeat: no-repeat;
+}
+
+span.ref {
+	text-align: center;
+	font-size: .75rem;
+}
+
+.icons {
+	width: 25px;
+	position: relative;
+}
+
+/*-------------------------------BREAKPOINTS-------------------------------*/
+@media only screen and (min-width: 375px) {
+	.card .btn {
+		width: 180px;
+	}
+
+	.card .cardExtra .cardExtra-renda .extraTitle, .card .cardExtra .cardExtra-rentabilidade .extraTitle {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.modulos {
+		float: left;
+		position: relative;
+		top: 120px;
+		left: 10px;
+	}
+
+	.card {
+		min-width: 300px;
+	}
+
+	.promo .txt-2 {
+		font-size: 1.3rem;
+		width: 85%;
+		margin-left: 0;
+		color: var(--bgDefault);
+	}
+
+	.promo .txt-1 {
+		font-size: 1.7rem;
+		max-width: 55%;
+		margin-left: 0;
+	}
+
+	.row-1 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.col-1 {
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	span.ref {
+		margin-left: 15px;
+	}
+}
+
+@media only screen and (min-width: 1000px){
+	.promo .txt-1 {
+		font-size: 2.2rem;
+	}
+
+	.promo .txt-2 {
+		font-size: 1.4rem;
+		width: 100%;
+	}
+
+	.modulos {
+		left: 40px;
+	}
+
+	.produtos p {
+		font-size: 1rem;
+		max-width: 45%;
+	}
+
+	.card {
+		min-width: 400px;
+		margin: 10px;
+		height: 34rem;
+	}
+
+	.card .cardContent {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+	.card .cardExtra {
+		margin-top: 6rem;
+	}
+
+	.card .cardExtra .cardExtra-renda .extraDescription, .card .cardExtra .cardExtra-rentabilidade .extraDescription {
+		margin-right: auto;
+	}
+
+	.card .cardExtra .cardExtra-renda .cardTitle, .card .cardExtra .cardExtra-rentabilidade .extraTitle {
+		margin: 0;
+	}
+
+	.carousel {
+		width: 800px;
+	}
+
+	.videoWrapper {
+		padding-bottom: 50.25%;
+	}
+
+	.accordion {
+		max-width: 600px;
+	}
+}
+
+@media only screen and (min-width: 1440px){
+	.container {
+		max-width: 1240px;
+		margin: 0 auto;
+	}
+
+	.navigation-bar li a {
+		margin-top: 10px;
+		padding: 10px;
+	}
+
+	.banner h1 {
+		font-size: 3rem;
+		max-width: 55%;
+	}
+
+	.modulos {
+		top: 110px;
+		left: 150px;
+	}
+
+	.promo .txt-1 {
+		font-size: 2.4rem;
+	}
+
+	.promo .card {
+		width: 85%;
+		height: 27rem;
+	}
+
+	.card {
+		width: 30%;
+		height: 33rem;
+	}
+
+	.card .cardContent {
+		height: 7rem;
+	}
+
+	.card .cardExtra {
+		margin-top: 8rem;
+	}
+}
+
+@media only screen and (min-width: 1920px){
+}
+/*-------------------------------/BREAKPOINTS-------------------------------*/

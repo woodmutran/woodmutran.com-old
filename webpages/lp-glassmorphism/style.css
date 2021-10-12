@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to right,  #55439E, #952FFF);
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-image: url('img/img-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-left-bottom {
+    width: 284px;
+    height: 284px;
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+#img-left-top {
+    width: 290.25px;
+    height: 267.16px;
+    position: absolute;
+    top: -100px;
+    left: -30px;
+}
+
+#img-right {
+    width: 550px;
+    height: 610px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
+.info {
+    width: 100%;
+    max-width: 1117px;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-title {
+    width: 480px;
+}
+
+.info-title h1 {
+    font-family: Lato, sans-serif;
+    width: 431px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.info-title p {
+    font-family: Open Sans, sans-serif;
+    width: 383px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    margin: 0 0 60px 0; 
+}
+
+.info-submit {
+    width: 100%;
+    position: relative;
+}
+
+.info-submit input {
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    padding-left: 30px;
+}
+
+.info-submit input::placeholder {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 16px;
+    color: #CDBFD8;
+}
+
+.info-submit button {
+    width: 120px;
+    height: 60px;
+    background-color: #4F3AA7;
+    border-radius: 6px;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 12px;
+    right: -20px;
+    cursor: pointer;
+}
+
+.info-card .card {
+    width: 500px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 50px;
+}
+
+.info-card .card::before {
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 20px 0 0 20px;    
+}
+
+.info-card .card::after {
+    content: '';
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-left: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    border-radius: 0 20px 20px 0;    
+}
+
+.card-title h2 {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 46px;
+}
+
+.card-chip {
+   margin-bottom: 45px;
+}
+
+.card-chip img {
+    width: 60px;
+    height: 43px; 
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-footer div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-footer .card-footer-info p {
+    font-family: Lato, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+}
+
+.card-footer .card-footer-info p {
+    margin: 0;
+}
+
+.card-footer .card-footer-info p:first-child {
+    margin-bottom: 8px;
+}
+
+.footer-text {
+    font-family: Lato, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer-text-big {
+    letter-spacing: 0.07em;
+    font-size: 20px;
+    line-height: 30px;
+}

@@ -1,0 +1,171 @@
+.boxQuestion {
+  width: 100%;
+  padding: .9rem;
+  background: var(--mainColor);
+  position: relative;
+  margin: 0 auto;
+}
+
+.boxQuestion h2{font-size: 1.2rem;color: var(--bgDefault);font-weight: var(--fwBolder);margin-bottom: .8rem;}
+
+.boxQuestion h3 {
+    font-size: 1.2rem;
+    color: var(--bgDefault);
+    font-weight: var(--fwBolder);
+    margin-bottom: .8rem;
+}
+
+.boxQuestion span {font-size: 1rem;color: var(--bgDefault);display: inline-flex;}
+
+input[type="radio"] {
+    background-color: transparent;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1rem soolid var(--mainColor)!important;
+}
+
+.space{margin-right: 1rem;}
+
+input[type="radio"]:checked {
+    background-color: red;
+}
+
+input#ctaQ {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  background: var(--bgDefault);
+  display: block;
+  margin: 2rem auto;
+  width: 6rem;
+  height: 2rem;
+  border: 0;
+  border-radius: .4rem;
+}
+
+.respostaErro {
+  font-size: 1rem;
+  font-weight: 700;
+  color: red;
+}
+
+#respostaSim, #respostaNao {
+  color: var(--bgDefault);
+}
+
+.qst{
+  margin: 1rem 0;
+  display: none;
+}
+
+.qst.active{display: block; height: 130px;padding: 1rem;}
+
+.boxBtNav{
+  width: 100%;
+  margin: var(--space);
+}
+
+.btnQuiz, .btNext{
+  width: 100%;
+  padding: 5px;
+  display: table;
+  border-radius: 3px;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btNext{
+  max-width: 90px;
+  color: var(--mainColor);
+  border: solid 2px var(--bgDefault);
+  text-transform: uppercase;
+}
+
+.btNext:hover{
+  color: #fff;
+  background: var(--bgDefault);
+}
+
+.qst input{
+  display: inline-flex;
+  margin-bottom: 2rem;
+}
+
+.qst input:focus{
+  outline-offset: 0;
+  outline: -webkit-focus-ring-color auto 0px;
+  /* background: none; */
+}
+
+.qst input:-webkit-autofill{
+  /* color: #fff !important; */
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  background-image: url(https://lp1.empiricus.com.br/assets/svgs-default/email-black.svg);
+}
+
+.boxMChoice{
+  width: 60%;
+  max-width: 380px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto 20px;
+}
+
+.boxMChoice div{
+  width: 50%;
+  display: table;
+  border-radius: 2px;
+}
+
+.boxMChoice div input{display: none;}
+
+.btChoice{
+  width: 85%;
+  color: var(--bgDefault);
+  border: solid 1.5px var(--mainColor);
+  background: #fff;
+  margin-left: 0;
+}
+
+.boxMChoice div input:checked + .btChoice, .btChoice:hover{
+  color: #fff;
+  background: var(--bgDefault);
+}
+
+@media only screen and (min-width: 768px){
+  .boxQuestion h2{font-size: 1.6rem;}
+
+  .boxQuestion h3 {font-size: 1.5rem;max-width: 500px;    padding: .7rem;}
+
+  .boxQuestion span{font-size: 1.3rem;display: inline-block;}
+
+  input[type="radio"]{width: 1.5rem;height: 1.5rem;}
+
+  input#ctaQ {width: 8rem; height: 3rem;font-size: 1.2rem;}
+
+  .boxMChoice{display: inline-flex;}
+
+  .btNext{max-width: 180px; margin: 0 auto; display: inline-table;}
+
+  .btnQuiz, .btNext{font-size: 18px;}
+}
+
+@media only screen and (min-width: 1000px){
+  .boxQuestion {width: 80%;padding: calc(var(--defaultSpace) * 1.5);margin: 1rem auto;}
+
+  .qst.active {height: 150px;}
+}
+
+@media only screen and (min-width: 1440px){
+  .boxQuestion h2 {font-size: 1.4rem;}
+}

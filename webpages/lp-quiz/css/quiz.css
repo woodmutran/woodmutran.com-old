@@ -1,0 +1,130 @@
+.qst{
+  margin-top: calc(var(--defaultSpace) * 5);
+  display: none;
+}
+.qst.active{display: block;}
+
+.boxBtNav{
+  width: 100%;
+  margin: var(--space);
+}
+
+.btn, .btNext{
+  width: 100%;
+  padding: 10px;
+  display: table;
+  border-radius: 3px;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btNext{
+  max-width: 140px;
+  color: var(--mainColor);
+  border: solid 1.5px var(--mainColor);
+  text-transform: uppercase;
+}
+
+.btNext:hover{
+  color: #fff;
+  background: var(--mainColor);
+}
+
+.qst input{
+  width: 100%;
+  max-width: 380px;
+  display: table;
+  background: rgba(0, 0, 0, 0.0);
+  border: none;
+  border-bottom: solid 1.5px #000;
+  padding: 12px 0;
+  font-size: 1.4em;
+  margin: var(--space);
+}
+
+.qst input:focus{
+  outline-offset: 0;
+  outline: -webkit-focus-ring-color auto 0px;
+  /* background: none; */
+}
+
+.qst input:-webkit-autofill{
+  /* color: #fff !important; */
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  background-image: url(https://lp1.empiricus.com.br/assets/svgs-default/email-black.svg);
+}
+
+.boxMChoice{
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto 20px;
+}
+
+.boxMChoice div{
+  width: 100%;
+  display: table;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.boxMChoice div input{display: none;}
+
+.c2.boxMChoice div:first-child{max-width: 80px;}
+.c2.boxMChoice div:last-child{width: calc(100% - 90px);}
+
+.c3.boxMChoice{max-width: 460px;}
+
+.c3.boxMChoice div{
+  width: auto;
+  max-width: 120px;
+}
+
+.c3.boxMChoice div:last-child{
+  width: 100%;
+  max-width: calc(100% - 190px);
+}
+
+.btChoice{
+  width: 100%;
+  color: var(--mainColor);
+  border: solid 1.5px var(--mainColor);
+}
+
+.boxMChoice div input:checked + .btChoice, .btChoice:hover{
+  color: #fff;
+  background: var(--mainColor);
+}
+
+@media only screen and (min-width: 411px){
+  .qName{font-size: 1.5em;}
+}
+
+@media only screen and (min-width: 768px){
+  .c3.boxMChoice div, .c3.boxMChoice div:last-child{
+    width: calc(33.33% - 5px);
+    max-width: none;
+  }
+
+  .btNext{
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .btn, .btNext{font-size: 18px;}
+}
+
+@media only screen and (min-width: 1000px){
+  .qName{font-size: 1.65em;}
+}
+
+@media only screen and (min-width: 1280px){
+  .qName{font-size: 1.7em;}
+}

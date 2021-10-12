@@ -1,0 +1,197 @@
+/*-----------FORMULÃRIO SIMPLES-----------*/
+.boxForm{
+  width: 100%;
+  max-width: 600px;
+}
+
+.simpleForm{
+  width: 100%;
+  margin: 0px auto;
+}
+
+.simpleForm input:focus{
+  outline-offset: 0;
+  outline: -webkit-focus-ring-color auto 0px;
+  /* background: none; */
+}
+
+.simpleForm input:-webkit-autofill{
+  /* color: #fff !important; */
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  box-shadow: 0 0 0px 1000px white inset;
+  background-image: url(https://lp1.empiricus.com.br/assets/svgs-default/email-black.svg);
+}
+
+/* .simpleForm .iconEmail::after{
+  content: "";
+  width: 100%;
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.0);
+  border-bottom: solid 4px rgba(0, 0, 0, 0.3);
+  display: block;
+} */
+
+.simpleForm .input{
+  width: 100%;
+  font-size: 1.2em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: var(--fwNormal);
+  padding: 12px 12px 12px 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.0);
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  background-position: 0px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  display: block;
+  position: relative;
+}
+
+.simpleForm .input::placeholder{
+  font-size: .9em;
+}
+
+.simpleForm .boxNameCel{
+  width: 100%;
+  height: auto;
+  margin: 7px 0 0 0;
+  display: table;
+}
+
+.simpleForm fieldset{
+  width: 50%;
+  border: 0;
+  margin: 0 0 15px;
+  display: table;
+  float: left;
+}
+
+.simpleForm .fieldsetEmail{
+  width: 100%;
+}
+
+.simpleForm fieldset:first-child{
+  padding: 0;
+}
+
+.simpleForm fieldset:last-child{
+  padding: 0 0 0 10px;
+}
+
+.simpleForm fieldset .input{
+  padding: 12px 12px 12px 0;
+}
+
+.simpleForm .btn-submit, .btOpenForm{
+  width: 100%;
+  max-width: 320px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: var(--fwBolder);
+  line-height: 1.15em;
+  position: relative;
+  padding: 22px 16px 26px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.95);
+  /* background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 20%, rgba(0,0,0, 0) 80%); */
+  box-shadow: 0 4px 8px 0 #ff00005e;
+  background-color: var(--btnsColor);
+  cursor: pointer;
+  border-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: block;
+}
+
+.simpleForm .btn-submit, .btOpenForm:hover {
+    box-shadow: 0 6px 10px 0 #ff00009e;
+}
+
+.btOpenForm img{
+  width: 20px;
+  height: auto;
+  margin-right: 15px;
+  position: relative;
+  transform: translateY(10%);
+}
+
+.simpleForm  .btn-submit{
+  margin: 0 auto 10px;
+}
+
+/* .simpleForm .btn-submit:after, .btOpenForm:after{
+  content: "";
+  width: 100%;
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.0);
+  border-bottom: solid 4px rgba(0, 0, 0, 0.3);
+  display: block;
+} */
+
+.simpleForm .btn-submit:hover, .btOpenForm:hover{
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2) 10%, rgba(0,0,0, 0) 90%);
+  background-color: var(--btnsColor);
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.simpleForm .infoSubmit{
+  width: 100%;
+  max-width: 600px;
+  color: #aaa;
+  text-align: center;
+  font-size: 0.9em;
+}
+/*-----------/FORMULÃRIO SIMPLES-----------*/
+
+/*-----------LABEL-----------*/
+.simpleForm label{
+  font-size: 15px;
+}
+
+.labeled_input_group.hasValue label{
+  display: block;
+}
+
+.labeled_input_group.hasValue input{
+  padding-top: 14px;
+  font-size: 1.2em;
+}
+/*-----------/LABEL-----------*/
+
+@media only screen and (min-width: 1000px){
+  .simpleForm .btn-submit{
+    font-size: 1.5em;
+    max-width: 430px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .btOpenForm{
+    max-width: 300px;
+    margin: 0;
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 1920px){
+  .btOpenForm{
+    max-width: 345px;
+    font-size: 1.6em;
+    margin: 0;
+  }
+}

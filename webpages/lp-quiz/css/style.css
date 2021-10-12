@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i&display=swap');
+
+:root {
+  --mainColor: #1d6dff;
+  --secundaryColor: #5a94ff;
+  --btnsColor: #1d6dff;
+  --space: 0 auto 1.4rem;
+  --mSpace: 0 auto 3rem;
+  --defaultSpace: 0.75rem;
+  --fwBolder: 700;
+  --fwNormal: 300;
+}
+
+*{
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+  margin: 0;
+  /* background: linear-gradient(to top, #0e0e0e 30%, #000); */
+  background: #fff;
+}
+
+.targe{background: #fff;}
+.targe p{color: #000;}
+
+b, u, i, span{font-family: inherit;}
+b{font-weight: var(--fwBolder);}
+u{text-decoration-color: var(--mainColor);}
+
+.container{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+}
+
+.blocks{
+  width: 100%;
+  margin: 0;
+  padding: var(--defaultSpace);
+  position: relative;
+}
+
+.stHeader{text-align: center;}
+
+.boxInfos{
+  width: 100%;
+  display: table;
+  color: #000;
+}
+
+h1, h2, h3, p, ul li, ol li{
+  margin: var(--space);
+  font-weight: var(--fwNormal);
+}
+
+h2, h3, p, ul li, ol li{line-height: 1.75rem;}
+
+h1{
+  font-size: 1.8rem;
+  font-weight: var(--fwBolder);
+  line-height: 1.95rem;
+  margin-bottom: calc(var(--defaultSpace) / 2);
+  /* text-transform: uppercase; */
+}
+
+h2{font-size: 1.4rem;}
+h3{font-size: 1.25rem;}
+p, ul li, ol li{font-size: 1.5rem;}
+
+.logo{
+  width: 100%;
+  max-width: 280px;
+  margin: -30px auto 22px;
+}
+
+.boxFloatButton{
+  width: 100%;
+  padding: var(--defaultSpace);
+  margin: 0 auto;
+  background: #000;
+  position: fixed;
+  bottom: 0;
+  z-index: 9999
+}
+
+.btnDesk{display: none !important;}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/*------------------FOOTER------------------*/
+footer {
+  width: 100%;
+  background-color: #fff;
+  color: #fff;
+  font-weight: var(--fwNormal);
+  margin: 0 auto;
+  padding: var(--defaultSpace);
+  text-align: center;
+  border-top: solid 1px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+  max-width: 620px;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  color: #000;
+}
+
+footer p:last-child{margin: 0 auto 100px;}
+footer p a {text-decoration: underline;}
+/*------------------/FOOTER------------------*/
+
+
+/*---------BREAKPOINTS---------*/
+@media only screen and (min-width: 411px){
+  h1{font-size: 2rem;}
+  h2{font-size: 1.5rem;}
+  h3{font-size: 1.35rem;}
+  p, ul li, ol li{font-size: 1.2rem;}
+}
+
+@media only screen and (min-width: 1000px){
+  /* body{background: #000;} */
+
+  .blocks{padding: 3.5rem;}
+
+  .container{max-width: 880px;}
+
+  .stHeader{
+    min-height: 80vh;
+    background-image: url(../img/bg-desktop.jpg);
+    background-position: center 0;
+    /* background-attachment: fixed; */
+    /* text-align: left; */
+  }
+
+  .stHeader::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: rgba(0, 0, 0, 0.3); */
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8)); */
+  }
+
+  .stHeader .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1{
+    font-size: 2.6rem;
+    line-height: 2.75rem;
+  }
+
+  h2{font-size: 1.65rem;}
+  h2, h3, p, ul li, ol li{line-height: 2rem;}
+  h3{font-size: 1.4rem;}
+  p, ul li, ol li{font-size: 1.3rem;}
+
+  footer p:last-child{margin: 0 auto;}
+
+  .boxFloatButton{display: none;}
+
+  .btnDesk{display: block !important;}
+}
+
+@media only screen and (min-width: 1280px){
+  .logo{max-width: 280px;}
+
+  h1{font-size: 2.8rem;}
+  h2{font-size: 1.7rem;}
+  h2{font-size: 1.5rem;}
+  p, ul li, ol li{font-size: 1.35rem;}
+}
+/*---------/BREAKPOINTS---------*/

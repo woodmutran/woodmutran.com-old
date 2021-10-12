@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+:root{
+  --mainColor: #5afdab;
+  --secundaryColor: #9e09c3;
+  --btnsColor: #10a4ee;
+  --btnsColor2: #71d0ff;
+  --bgDefault: #060606;
+  --bgDefault2: #191717;
+  --optionalTextColor: #999;
+  --lSpace: 0 auto 0.85rem;
+  --space: 0 auto 1.7rem;
+  --mSpace: 0 auto 3.4rem;
+  --defaultSpace: 1rem;
+  --fwBolder: 700;
+  --fwNormal: 300;
+}
+
+*{
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+  margin: 0;
+  background: var(--bgDefault);
+}
+
+a, b, u, i, span{font-family: inherit;}
+b{font-weight: var(--fwBolder);}
+
+u{
+  text-decoration-color: var(--mainColor);
+  cursor: pointer;
+}
+
+.mainColor{color:var(--mainColor);}
+
+.container{
+  width: 100%;
+  min-height: 90vh;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+}
+
+.blocks{
+  width: 100%;
+  margin: 0;
+  padding: var(--defaultSpace);
+  position: relative;
+}
+
+.stHeader{
+  text-align: center;
+  color: #fff;
+  position: relative;
+  /* background: linear-gradient(155deg, var(--bgDefault2), var(--bgDefault) 50%); */
+  background: var(--bgDefault2);
+}
+
+.boxInfos{
+  width: 100%;
+  color: #fff;
+  margin: calc(var(--defaultSpace) * 6) auto 0;
+  display: block;
+}
+
+.boxEmail, .boxTelegram{
+  width: 100%;
+  border-radius: 8px;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  padding: calc(var(--defaultSpace) * 1.4);
+  position: relative;
+}
+
+.boxEmail::before, .boxTelegram::before{
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: solid 1px var(--mainColor);
+  background: inherit;
+  font-weight: var(--fwBolder);
+  text-transform: uppercase;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  background: var(--mainColor);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;
+  font-weight: bold;
+}
+
+/* .boxEmail::before, .boxTelegram::before{
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: solid 1px var(--secundaryColor);
+  background: inherit;
+  font-weight: var(--fwBolder);
+  text-transform: uppercase;
+  color: var(--secundaryColor);
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+} */
+
+.boxEmail::before{content: "Passo 1";}
+.boxTelegram::before{content: "Passo 2";}
+
+.boxEmail{margin-bottom: calc(var(--defaultSpace) * 6);}
+
+.boxButtonsEmail{
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.boxButtonsEmail a{
+  width: calc(33.3% - 25px);
+  display: block;
+}
+
+.boxButtonsEmail a img{width: 100%;}
+
+/*------------------ CALENDAR ------------------*/
+.calendar{
+  width: 100%;
+  padding: calc(var(--defaultSpace) * 1.4);
+  position: relative;
+}
+
+.iconCalendar{
+  width: 1.5rem;
+  margin-right: .8rem;
+  vertical-align: sub;
+}
+
+.btnCalendar {
+  width: 100%;
+  max-width: 300px;
+  font-size: 1.1rem;
+  font-weight: var(--fwBolder);
+  /* font-family: 'Barlow Condensed', sans-serif; */
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  padding: 16px 16px 22px;
+  margin: var(--space);
+  box-sizing: border-box;
+  color: var(--bgDefault2);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.44) 20%, rgba(0, 0, 0, 0) 80%);
+  /* background: linear-gradient(30deg, #ff0d5d, #9e09c3); */
+  background: var(--mainColor);
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+}
+
+.btnCalendar:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+}
+/*------------------ /CALENDAR ------------------*/
+
+h1, h2, h3, p, ul li, ol li{
+  margin: var(--space);
+  font-weight: var(--fwNormal);
+  letter-spacing: 0.03rem;
+}
+
+h1{
+  font-size: 2em;
+  font-weight: var(--fwBolder);
+  line-height: 1.2em;
+  /* text-transform: uppercase; */
+}
+
+h2{
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+
+h3{
+  font-size: 1.35em;
+  line-height: 1.4em;
+}
+
+p, ul li, ol li{
+  font-size: 1.15em;
+  line-height: 1.35em;
+}
+
+.btn{
+  width: 100%;
+  max-width: 440px;
+  font-size: 1.1rem;
+  font-weight: var(--fwBolder);
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.01rem;
+  line-height: 1.35rem;
+  position: relative;
+  padding: 1.1rem var(--defaultSpace) 1.25rem;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(30deg, var(--btnsColor2), var(--btnsColor));
+  cursor: pointer;
+  border-radius: 8px;
+  display: block;
+}
+
+.btn::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(30deg, var(--btnsColor2), var(--btnsColor));
+  z-index: -1;
+  filter: blur(15px);
+  opacity: 0.6;
+}
+
+.btn:hover{
+  background: linear-gradient(30deg, var(--btnsColor), var(--btnsColor2));
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+
+.btn img{
+  width: 14px;
+  margin-right: 8px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer{
+  width: 100%;
+  background-color: var(--bgDefault);
+  color: #414853;
+  font-weight: var(--fwNormal);
+  margin: 0 auto;
+  padding: var(--defaultSpace);
+  text-align: center;
+}
+
+footer .logoEmpiricus{
+  width: 100px;
+  margin: 0 auto 22px;
+  display: block;
+}
+
+footer p{
+  max-width: 880px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.65rem;
+  line-height: 1rem;
+}
+
+footer p:last-child{margin: 0 auto 100px;}
+footer p a{text-decoration: underline;}
+
+@media only screen and (min-width: 768px){
+  .container{max-width: 700px;}
+  .boxInfos.flex{align-items: stretch;}
+
+  .boxEmail, .boxTelegram{width: calc(50% - (var(--defaultSpace) * 1.2));display: flex; flex-direction: column; justify-content: space-between;}
+
+ .boxEmail{margin: 0;}
+
+  .calendar{display: inline-flex; align-items: center; justify-content: center; /* justify-content: space-around; */}
+
+ .calendar p{ font-size: 1rem; text-align: left; max-width: 350px;}
+}
+
+@media only screen and (min-width: 1000px){
+  .blocks{padding: 3.5rem;}
+
+  .container{
+    max-width: 880px;
+    font-size: 1.2em;
+  }
+
+  footer p:last-child{margin: 0 auto;}
+
+  .btnCalendar{margin: 0;}
+
+  .calendar p{font-size: 1.1rem; margin: 0; margin-right: 2rem;}
+}
+
+@media only screen and (min-width: 1280px){
+  .container{max-width: 1100px;}
+}
+
+@media only screen and (min-width: 1440px){
+.calendar p {font-size: 1.2rem;max-width: 400px;}
+}

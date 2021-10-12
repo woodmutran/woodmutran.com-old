@@ -1,0 +1,739 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:300,300i,400,400i,600,600i');
+
+:root {
+  --mainColor: #e82d2d;
+  --secundaryColor: #ff6262;
+  --btnsColor: #e82d2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*------------------MODAL------------------*/
+.showModal{
+  cursor: pointer;
+}
+
+.modal{
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 10000000;
+  visibility: hidden;
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal .modalContent{
+  width: 90vw;
+  max-width: 600px;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3%;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.modal .modalContent .titleForm{
+  color: #333;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.modal .modalContent form{
+  width: 100%;
+  max-width: 100%;
+}
+
+.modal .modalContent form input{
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  padding: 12px;
+  box-sizing: border-box;
+  color: #333;
+  background: rgba(0, 0, 0, 0.0);
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  background-position: 0px;
+  border-bottom: 1px solid #333;
+  margin: 0 8px 0 0;
+  display: block;
+}
+
+.modal .modalContent form fieldset input{
+  padding: 12px 12px 12px 0;
+}
+
+.modal .modalContent .iconEmail{
+  background-image: url(../svg/email-black.svg);
+  padding: 12px 12px 12px 30px;
+}
+
+.modal .modalContent form p{
+  color: #000;
+}
+
+.modal .modalContent .boxBtnFechar{
+  width: 35px;
+  height: auto;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/*------------------/MODAL------------------*/
+
+
+/*-------------------------------CLASSES PONTUAIS-------------------------------*/
+.noWrap{
+  white-space: nowrap;
+}
+
+.highlight{
+  color: var(--mainColor);
+}
+
+.highlight-2{
+  color: var(--secundaryColor);
+}
+
+.bolder{
+  font-weight: 600;
+}
+
+.center{
+  text-align: center;
+}
+
+.hidden{
+  display: none !important;
+}
+
+.fw{
+  font-weight: 300 !important;
+}
+
+.hMobile{
+  display: none;
+}
+
+.red{
+  color: red;
+}
+
+.lineBreak{
+  display: block;
+}
+
+.link{
+  color: #0091ff;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 65px;
+  width: 100%;
+  height: 2px;
+  background: #0091ff;
+  transform: scale(0,0);
+  transition: .2s all linear;
+}
+
+.link:hover::after{
+  transform: scale(1,1);
+}
+/*-------------------------------/CLASSES PONTUAIS-------------------------------*/
+
+
+/*-------------------------------CÓDIGO PARA MOBILE-------------------------------*/
+/*-----------------------------BLOCO 1--------------------------*/
+/*------------------INFOS------------------*/
+body{
+  font-family: 'Barlow Condensed', sans-serif;
+  margin: 0;
+  background: #000;
+}
+
+.container{
+  width: 100%;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+}
+
+.blocks{
+  width: 100%;
+  margin: 0;
+  padding: 5%;
+  display: block;
+  position: relative;
+}
+
+.block-1{
+  /*background: #f8fbff;*/
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.block-1::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+
+.logo{
+  width: 100%;
+  max-height: 50px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.containerInfo{
+  width: 100%;
+  height: auto;
+  display: table;
+  overflow: hidden;
+}
+
+.boxInfos{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+  float: none;
+}
+
+h1, h2, h3, p, ul{
+  margin: 14px auto;
+}
+
+h1{
+  font-size: 1.6em;
+  line-height: 1em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2{
+  font-size: 1.1em;
+  line-height: 1.2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.mainTitle, .subtitle, p{
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  
+}
+/*------------------/INFOS------------------*/
+
+/*------------------FORMULÁRIO SIMPLES------------------*/
+.boxForm{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  padding: 0;
+  margin: 14px auto;
+  display: block;
+  float: none;
+}
+
+.boxForm p{
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.simpleForm{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.simpleForm input:focus{
+  outline-offset: 0;
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+.simpleForm input:-webkit-autofill{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-image: none !important;
+  color: #fff !important;
+  box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 1.0) inset;
+}
+
+.simpleForm .input{
+  width: 100%;
+  height: auto;
+  font-size: 1.2em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  padding: 12px 12px 12px 30px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.0);
+  background-repeat: no-repeat;
+  background-size: 22px auto;
+  background-position: 0px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
+
+.simpleForm .input::placeholder{
+  font-size: .9em;
+}
+
+.simpleForm .iconEmail{
+  background-image: url(../svg/email.svg);
+}
+
+.simpleForm .boxNameCel{
+  width: 100%;
+  height: auto;
+  margin: 7px 0 0 0;
+  display: block;
+  overflow: hidden;
+}
+
+.simpleForm fieldset{
+  width: 50%;
+  height: auto;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+
+.simpleForm fieldset:first-child{
+  padding-right: 10px;
+}
+
+.simpleForm fieldset:last-child{
+  padding-left: 10px;
+}
+
+.simpleForm fieldset .input{
+  padding: 12px 12px 12px 0;
+}
+
+.simpleForm .btn-submit{
+  width: 100%;
+  /*max-width: 285px;*/
+  height: auto;
+  font-size: 1.2em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+  padding: 16px;
+  margin: 22px auto 0;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: var(--btnsColor);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  display: block;
+}
+
+.simpleForm .btn-submit:hover{
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(35, 17, 16, 0.39));
+  background-color: var(--btnsColor);
+}
+
+.simpleForm .infoSubmit{
+  width: 100%;
+  max-width: 600px;
+  color: #aaa;
+  margin: 10px auto 0;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+/*------------------/FORMULÁRIO SIMPLES------------------*/
+
+
+/*------------------SETA------------------*/
+.boxArrowDown{
+  width: 100%;
+  height: 40px;
+  margin: 10px auto;
+  text-align: center;
+  display: block;
+}
+
+.arrowDown{
+  height: 45px;
+  position: relative;
+  top: 10px;
+  -webkit-animation: arrowDown 1s infinite linear;
+  animation: arrowDown 1s infinite linear;
+  animation-delay: -2s;
+}
+
+@-webkit-keyframes arrowDown {
+    0%, 20%, 50%, 80%, 100% {
+      -webkit-transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+    }
+}
+
+@keyframes arrowDown {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+}
+/*------------------/SETA------------------*/
+/*-----------------------------/BLOCO 1--------------------------*/
+
+
+/*------------------BLOCO 2------------------*/
+.block-2{
+  background: #f9f9f9;
+}
+
+.block-2 .subtitle{
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4em;
+  margin-bottom: 25px;
+}
+
+.block-2 .subtitle::after{
+  content: "";
+  width: 80px;
+  height: 3px;
+  margin: 10px auto;
+  background: var(--secundaryColor);
+  display: block;
+}
+
+.block-2 .boxModulo{
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  border-bottom: solid 2px #e9e9e9;
+  height: auto;
+  display: block;
+  overflow: auto;
+}
+
+.block-2 .boxModulo .thumbCPL{
+  width: 80px;
+  margin: 0 auto 15px;
+  display: block;
+  float: none;
+}
+
+.block-2 .boxModulo .boxDescricao{
+  width: 100%;
+  height: auto;
+  padding-left: 0;
+  display: block;
+  overflow: auto;
+  float: none;
+}
+
+.block-2 .boxModulo .boxDescricao .modulo{
+  color: var(--secundaryColor);
+  font-size: 1em;
+  margin-top: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.block-2 .boxModulo .boxDescricao .descricao{
+  color: #000;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* .block-2 .boxBonus{
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: var(--secundaryColor);
+  padding: 18px;
+  display: table;
+}
+
+.block-2 .boxBonus h2{
+  text-align: center;
+  margin: 10px auto;
+  color: #fff;
+} */
+
+.block-2 .boxBonus .subtitle::after{
+  content: "";
+  display: none;
+}
+
+.block-2 .boxForm{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.0);
+  float: none;
+}
+
+.block-2 .simpleForm .input{
+  color: #000;
+  border-bottom: 1px solid #333;
+}
+
+.block-2 .simpleForm .iconEmail{
+  background-image: url(../svg/email-black.svg);
+}
+/*------------------BLOCO 2------------------*/
+
+
+
+/*------------------FOOTER------------------*/
+footer {
+  background-color: #000;
+  padding: 20px;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin: 0;
+  vertical-align: baseline;
+  text-align: center;
+  display: block;
+}
+
+footer p {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  font-family: Arial;
+  font-size: 10px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: underline;
+}
+/*------------------/FOOTER------------------*/
+
+/*-------------------------------/CÓDIGO PARA MOBILE-------------------------------*/
+
+
+
+
+
+/*-------------------------------BREAKPOINTS-------------------------------*/
+@media only screen and (min-width: 375px){
+  .hMobile{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 411px){
+  h1{
+    font-size: 1.8em;
+  }
+
+  h2{
+    font-size: 1.2em;
+  }
+}
+
+
+@media only screen and (min-width: 768px){
+  .logo{
+    max-height: 70px;
+  }
+
+  .blocks{
+    padding: 3%;
+  }
+
+  .simpleForm p{
+    font-size: 1.2em;
+  }
+
+  .block-2 .subtitle{
+    font-size: 1.8em;
+  }
+
+  .block-2 .boxModulo .thumbCPL{
+    float: left;
+  }
+
+  .block-2 .boxModulo .boxDescricao{
+    width: calc(100% - 135px);
+    padding-left: 20px;
+    float: left;
+  }
+
+  .block-2 .boxModulo .boxDescricao .modulo{
+    text-align: left;
+  }
+
+  .block-2 .boxModulo .boxDescricao .descricao{
+    font-size: 1.6em;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .logo{
+    margin: 0 auto 50px;
+  }
+
+  .block-1{
+    min-height: 88vh;
+    background-image: url(../img/bg-desktop.png);
+  }
+
+  .block-1::after{
+    background: rgba(0, 0, 0, 0.0);
+  }
+
+  .block-1 .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .boxInfos{
+    width: calc(55% - 30px);
+    margin: 30px 30px 0 0;
+    float: left;
+  }
+
+  .littleText{
+    font-size: 35px;
+    line-height: 0px;
+  }
+
+  h1{
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+
+  h2{
+    font-size: 1.6em;
+  }
+
+  .arrowDown{
+    height: 65px;
+  }
+
+  .boxForm{
+    width: calc(33% - 60px);
+    padding: 30px;
+    margin: 18px;
+    margin-left: 160px;
+    background: hsla(0, 100%, 7%, 0.81);
+    display: block;
+    float: right;
+  }
+
+  .boxForm:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px -10px var(--btnsColor);
+  }
+
+  .boxForm p {
+    font-size: 1.2em;
+  }
+
+  .mainTitle{
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  .mainTitle, .subtitle{
+    text-align: left;
+    margin-left: 35%;
+  }
+
+  .block-2 .boxForm{
+    background: #fff;
+    box-shadow: 0px 0px 25px 0px #ccc;
+  }
+}
+
+@media only screen and (min-width: 1440px){
+  .blocks{
+    padding: 2%;
+  }
+    .mainTitle, .subtitle{
+    text-align: left;
+    margin-left: 50%;
+  }
+      .mainTitle{
+    font-size: 50px;
+  }
+}
+/*-------------------------------/BREAKPOINTS-------------------------------*/
+
+@media only screen and (max-width: 480px){
+  .hideMobile{
+    display: none;
+  }
+
+  .block-2 .subtitle{
+    font-size: 2.4em;
+  }
+}

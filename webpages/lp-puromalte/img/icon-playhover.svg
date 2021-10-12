@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26">
+  <g id="Grupo_9" data-name="Grupo 9" transform="translate(-0.04 0.431)">
+    <ellipse id="Elipse_3" data-name="Elipse 3" cx="12.5" cy="13" rx="12.5" ry="13" transform="translate(0.04 -0.431)"/>
+    <path id="play" d="M11.7,6.6l-7.83-4.53a1.1,1.1,0,0,0-.647,0,.68.68,0,0,0-.324.582v9.06a.68.68,0,0,0,.324.582.485.485,0,0,0,.324.065.583.583,0,0,0,.324-.065l7.83-4.53a.686.686,0,0,0,0-1.165ZM4.194,10.616V3.756l5.889,3.43Z" transform="translate(6.017 5.508)" fill="#ffebb3"/>
+  </g>
+</svg>

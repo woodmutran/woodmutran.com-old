@@ -1,0 +1,140 @@
+.content{
+  background: var(--bgDefault);
+  color: #000;
+  text-align: center;
+}
+
+.boxes {
+  width: 100%;
+  /* margin: var(--space); */
+  display: table;
+  margin-top: 1.5rem;
+}
+
+.boxes h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.content .itens {
+  width: 100%;
+  color: var(--secundaryColor);
+  box-shadow: 0px 7px 20px 0px #1da1f247;
+  margin-bottom: 3.5rem;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid var(--secundaryColor);
+  border-radius: .25rem;
+  height: 250px;
+  padding: 2rem;
+}
+
+.content .itens:hover {
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+.icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 100%;
+  background-color: var(--mainColor);
+  margin: 0 auto;
+  position: relative;
+  bottom: 70px;
+  border: 5px solid var(--mainColor);
+}
+
+/* .icon:hover {
+  background-color: var(--mainColor);
+  border: none;
+} */
+
+.icon img {
+  width: 75px;
+  height: auto;
+  position: relative;
+  top: 10px;
+}
+
+h2.contentH2 {
+  font-size: 1.2rem;
+}
+
+.itemTxt {
+  margin-top: -50px;
+}
+
+@media only screen and (min-width: 375px) {
+  p.quote {
+    max-width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .boxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .content .itens {
+    width: 45%;
+    height: 269px;
+    margin: 2.5rem auto;
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  .boxImg, .boxImg img{
+    max-width: 540px;
+    margin: 0;
+  }
+
+  .content .itens {
+    width: 35%;
+}
+
+  .boxes h2{
+    font-size: 1.4rem;
+  }
+
+  .boxes p {
+    font-size: 1.2rem;
+  }
+
+  .content .btOpenForm{margin: 0 auto;}
+}
+
+@media only screen and (min-width: 1280px){
+
+}
+
+@media only screen and (min-width: 1440px){
+  .content .itens {
+    width: 22%;
+    /* width: 17%; */
+    margin: 0 auto;
+  }
+
+  .boxes p {
+    font-size: .9rem;
+  }
+
+  .icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .icon img {
+    width: 50px;
+  }
+}
+
+@media only screen and (min-width: 1920px){
+  section.blocks.content {
+      max-width: 1700px;
+      margin: 0 auto;
+  }
+}
