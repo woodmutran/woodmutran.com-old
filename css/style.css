@@ -1,6 +1,7 @@
 body {
     /* Mudar cor do fundo */
-    background-color: #000000!important;
+    /* background-color: #000000!important; */
+    background: linear-gradient(to right, #0c0c0c, #404040);
     /* Mudar família da fonte */
     font-family:'Montserrat', sans-serif!important;
     /* Mudar cor da fonte */
